@@ -5,7 +5,6 @@ from PyPDF2 import PdfReader, PdfWriter
 from io import BytesIO
 from prompt import PDF_PROMPT
 
-
 def split_pdf(pdf_path: str, pages_per_chunk: int = 20):
     """Split PDF into smaller chunks"""
     reader = PdfReader(pdf_path)
